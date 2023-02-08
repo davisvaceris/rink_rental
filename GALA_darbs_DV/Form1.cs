@@ -60,5 +60,35 @@ namespace GALA_darbs_DV
         {
 
         }
+
+        private void searchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var EquiSearch = new equipment_search();
+            EquiSearch.Location = this.Location;
+            EquiSearch.StartPosition= FormStartPosition.Manual;
+            EquiSearch.FormClosing += delegate { this.Show(); };
+            EquiSearch.Show();
+            this.Hide();
+        }
+
+        private void equipmentToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            var EquiSearch = new equipment_search(true);
+            EquiSearch.Location = this.Location;
+            EquiSearch.StartPosition = FormStartPosition.Manual;
+            EquiSearch.FormClosing += delegate { this.Show(); };
+            EquiSearch.Show();
+            this.Close();
+        }
+
+        private void accessoriesToolStripMenuItem_Click(object sender, EventArgs e)
+        {   
+            var EquiSearch = new equipment_search(false);
+            EquiSearch.Location = this.Location;
+            EquiSearch.StartPosition = FormStartPosition.Manual;
+            EquiSearch.FormClosing += delegate { this.Show(); };
+            EquiSearch.Show();
+            this.Close();
+        }
     }
 }

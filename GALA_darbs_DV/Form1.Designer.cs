@@ -35,6 +35,8 @@
             this.hOMEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addRenterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rentersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.activeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.archiveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.equipmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,8 +44,6 @@
             this.accessoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.workersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.activeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.archiveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -52,19 +52,19 @@
             // 
             this.label1.AccessibleName = "lbl";
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(785, 61);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(589, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 16);
+            this.label1.Size = new System.Drawing.Size(79, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "equipment type";
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(907, 53);
+            this.comboBox1.Location = new System.Drawing.Point(680, 43);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.Size = new System.Drawing.Size(92, 21);
             this.comboBox1.TabIndex = 2;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -80,20 +80,21 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1067, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // hOMEToolStripMenuItem
             // 
             this.hOMEToolStripMenuItem.Name = "hOMEToolStripMenuItem";
-            this.hOMEToolStripMenuItem.Size = new System.Drawing.Size(66, 24);
+            this.hOMEToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.hOMEToolStripMenuItem.Text = "HOME";
             // 
             // addRenterToolStripMenuItem
             // 
             this.addRenterToolStripMenuItem.Name = "addRenterToolStripMenuItem";
-            this.addRenterToolStripMenuItem.Size = new System.Drawing.Size(94, 24);
+            this.addRenterToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
             this.addRenterToolStripMenuItem.Text = "Add renter";
             // 
             // rentersToolStripMenuItem
@@ -102,8 +103,20 @@
             this.activeToolStripMenuItem,
             this.archiveToolStripMenuItem});
             this.rentersToolStripMenuItem.Name = "rentersToolStripMenuItem";
-            this.rentersToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
+            this.rentersToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
             this.rentersToolStripMenuItem.Text = "renters";
+            // 
+            // activeToolStripMenuItem
+            // 
+            this.activeToolStripMenuItem.Name = "activeToolStripMenuItem";
+            this.activeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.activeToolStripMenuItem.Text = "active";
+            // 
+            // archiveToolStripMenuItem
+            // 
+            this.archiveToolStripMenuItem.Name = "archiveToolStripMenuItem";
+            this.archiveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.archiveToolStripMenuItem.Text = "archive";
             // 
             // equipmentToolStripMenuItem
             // 
@@ -111,15 +124,16 @@
             this.searchToolStripMenuItem,
             this.showToolStripMenuItem});
             this.equipmentToolStripMenuItem.Name = "equipmentToolStripMenuItem";
-            this.equipmentToolStripMenuItem.Size = new System.Drawing.Size(95, 24);
+            this.equipmentToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
             this.equipmentToolStripMenuItem.Text = "Equipment";
             this.equipmentToolStripMenuItem.Click += new System.EventHandler(this.equipmentToolStripMenuItem_Click);
             // 
             // searchToolStripMenuItem
             // 
             this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(136, 26);
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.searchToolStripMenuItem.Text = "Search";
+            this.searchToolStripMenuItem.Click += new System.EventHandler(this.searchToolStripMenuItem_Click);
             // 
             // showToolStripMenuItem
             // 
@@ -127,64 +141,53 @@
             this.equipmentToolStripMenuItem1,
             this.accessoriesToolStripMenuItem});
             this.showToolStripMenuItem.Name = "showToolStripMenuItem";
-            this.showToolStripMenuItem.Size = new System.Drawing.Size(136, 26);
+            this.showToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.showToolStripMenuItem.Text = "Show";
             // 
             // equipmentToolStripMenuItem1
             // 
             this.equipmentToolStripMenuItem1.Name = "equipmentToolStripMenuItem1";
-            this.equipmentToolStripMenuItem1.Size = new System.Drawing.Size(168, 26);
+            this.equipmentToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.equipmentToolStripMenuItem1.Text = "Equipment";
+            this.equipmentToolStripMenuItem1.Click += new System.EventHandler(this.equipmentToolStripMenuItem1_Click);
             // 
             // accessoriesToolStripMenuItem
             // 
             this.accessoriesToolStripMenuItem.Name = "accessoriesToolStripMenuItem";
-            this.accessoriesToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
+            this.accessoriesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.accessoriesToolStripMenuItem.Text = "Accessories";
+            this.accessoriesToolStripMenuItem.Click += new System.EventHandler(this.accessoriesToolStripMenuItem_Click);
             // 
             // adminToolStripMenuItem
             // 
             this.adminToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.workersToolStripMenuItem});
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
-            this.adminToolStripMenuItem.Size = new System.Drawing.Size(72, 24);
+            this.adminToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
             this.adminToolStripMenuItem.Text = "ADMIN";
             // 
             // workersToolStripMenuItem
             // 
             this.workersToolStripMenuItem.Name = "workersToolStripMenuItem";
-            this.workersToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.workersToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
             this.workersToolStripMenuItem.Text = "workers";
-            // 
-            // activeToolStripMenuItem
-            // 
-            this.activeToolStripMenuItem.Name = "activeToolStripMenuItem";
-            this.activeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.activeToolStripMenuItem.Text = "active";
-            // 
-            // archiveToolStripMenuItem
-            // 
-            this.archiveToolStripMenuItem.Name = "archiveToolStripMenuItem";
-            this.archiveToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.archiveToolStripMenuItem.Text = "archive";
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(52, 24);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(42, 20);
             this.helpToolStripMenuItem.Text = "help";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "RINK RENTAL © Dāvis Vāceris";
             this.Load += new System.EventHandler(this.Form1_Load);
