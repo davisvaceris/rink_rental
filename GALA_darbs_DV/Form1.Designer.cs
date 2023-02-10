@@ -32,7 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.hOMEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.HOMEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addRenterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rentersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.activeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,7 +44,7 @@
             this.accessoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.workersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aDMINToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ADMINToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -77,7 +77,7 @@
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.hOMEToolStripMenuItem,
+            this.HOMEToolStripMenuItem,
             this.addRenterToolStripMenuItem,
             this.rentersToolStripMenuItem,
             this.equipmentToolStripMenuItem,
@@ -90,12 +90,12 @@
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // hOMEToolStripMenuItem
+            // HOMEToolStripMenuItem
             // 
-            this.hOMEToolStripMenuItem.Name = "hOMEToolStripMenuItem";
-            this.hOMEToolStripMenuItem.Size = new System.Drawing.Size(66, 24);
-            this.hOMEToolStripMenuItem.Text = "HOME";
-            this.hOMEToolStripMenuItem.DoubleClick += new System.EventHandler(this.hOMEToolStripMenuItem_Click);
+            this.HOMEToolStripMenuItem.Name = "HOMEToolStripMenuItem";
+            this.HOMEToolStripMenuItem.Size = new System.Drawing.Size(66, 24);
+            this.HOMEToolStripMenuItem.Text = "HOME";
+            this.HOMEToolStripMenuItem.Click += new System.EventHandler(this.HOMEToolStripMenuItem_Click);
             // 
             // addRenterToolStripMenuItem
             // 
@@ -171,7 +171,7 @@
             // 
             this.adminToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.workersToolStripMenuItem,
-            this.aDMINToolStripMenuItem1});
+            this.ADMINToolStripMenuItem1});
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
             this.adminToolStripMenuItem.Size = new System.Drawing.Size(72, 24);
             this.adminToolStripMenuItem.Text = "ADMIN";
@@ -184,12 +184,12 @@
             this.workersToolStripMenuItem.Text = "workers";
             this.workersToolStripMenuItem.Click += new System.EventHandler(this.workersToolStripMenuItem_Click);
             // 
-            // aDMINToolStripMenuItem1
+            // ADMINToolStripMenuItem1
             // 
-            this.aDMINToolStripMenuItem1.Name = "aDMINToolStripMenuItem1";
-            this.aDMINToolStripMenuItem1.Size = new System.Drawing.Size(143, 26);
-            this.aDMINToolStripMenuItem1.Text = "ADMIN";
-            this.aDMINToolStripMenuItem1.Click += new System.EventHandler(this.adminToolStripMenuItem_Click);
+            this.ADMINToolStripMenuItem1.Name = "ADMINToolStripMenuItem1";
+            this.ADMINToolStripMenuItem1.Size = new System.Drawing.Size(143, 26);
+            this.ADMINToolStripMenuItem1.Text = "ADMIN";
+            this.ADMINToolStripMenuItem1.Click += new System.EventHandler(this.adminToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -204,7 +204,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(131, 26);
             this.aboutToolStripMenuItem.Text = "about";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -212,7 +212,7 @@
             // 
             this.helpToolStripMenuItem1.DoubleClickEnabled = true;
             this.helpToolStripMenuItem1.Name = "helpToolStripMenuItem1";
-            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(131, 26);
             this.helpToolStripMenuItem1.Text = "help";
             this.helpToolStripMenuItem1.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 

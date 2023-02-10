@@ -26,7 +26,6 @@ namespace GALA_darbs_DV
             this.Hide();
             EquiSearch.Location = this.Location;
             EquiSearch.StartPosition = FormStartPosition.Manual;
-            EquiSearch.FormClosing += delegate { this.Show(); };
             EquiSearch.ShowDialog();
             this.Close();
         }
@@ -37,7 +36,6 @@ namespace GALA_darbs_DV
             this.Hide();
             EquiSearch.Location = this.Location;
             EquiSearch.StartPosition = FormStartPosition.Manual;
-            EquiSearch.FormClosing += delegate { this.Show(); };
             EquiSearch.ShowDialog();
             this.Close();
         }
@@ -48,7 +46,6 @@ namespace GALA_darbs_DV
             this.Hide();
             EquiSearch.Location = this.Location;
             EquiSearch.StartPosition = FormStartPosition.Manual;
-            EquiSearch.FormClosing += delegate { this.Show(); };
             EquiSearch.ShowDialog();
             this.Close();
         }
@@ -59,7 +56,6 @@ namespace GALA_darbs_DV
             this.Hide();
             EquiSearch.Location = this.Location;
             EquiSearch.StartPosition = FormStartPosition.Manual;
-            EquiSearch.FormClosing += delegate { this.Show(); };
             EquiSearch.ShowDialog();
             this.Close();
         }
@@ -70,7 +66,6 @@ namespace GALA_darbs_DV
             this.Hide();
             home.Location = this.Location;
             home.StartPosition = FormStartPosition.Manual;
-            home.FormClosing += delegate { this.Show(); };
             home.ShowDialog();
             this.Close();
 
@@ -81,7 +76,6 @@ namespace GALA_darbs_DV
             var add_renters = new add_renter();
             add_renters.Location = this.Location;
             add_renters.StartPosition = FormStartPosition.Manual;
-            add_renters.FormClosing += delegate { this.Show(); };
             add_renters.ShowDialog();
         }
 
@@ -92,7 +86,6 @@ namespace GALA_darbs_DV
             this.Hide();
             renters.Location = this.Location;
             renters.StartPosition = FormStartPosition.Manual;
-            renters.FormClosing += delegate { this.Show(); };
             renters.ShowDialog();
             this.Close();
         }
@@ -103,7 +96,6 @@ namespace GALA_darbs_DV
             this.Hide();
             renters.Location = this.Location;
             renters.StartPosition = FormStartPosition.Manual;
-            renters.FormClosing += delegate { this.Show(); };
             renters.ShowDialog();
             this.Close();
         }
@@ -115,7 +107,6 @@ namespace GALA_darbs_DV
             this.Hide();
             admin.Location = this.Location;
             admin.StartPosition = FormStartPosition.Manual;
-            admin.FormClosing += delegate { this.Show(); };
             admin.ShowDialog();
             this.Close();
         }
@@ -126,7 +117,6 @@ namespace GALA_darbs_DV
             this.Hide();
             workers.Location = this.Location;
             workers.StartPosition = FormStartPosition.Manual;
-            workers.FormClosing += delegate { this.Show(); };
             workers.ShowDialog();
             this.Close();
         }
@@ -136,7 +126,6 @@ namespace GALA_darbs_DV
             var about = new about();
             about.Location = this.Location;
             about.StartPosition = FormStartPosition.Manual;
-            about.FormClosing += delegate { this.Show(); };
             about.ShowDialog();
 
         }
@@ -146,7 +135,6 @@ namespace GALA_darbs_DV
             var help = new help();
             help.Location = this.Location;
             help.StartPosition = FormStartPosition.Manual;
-            help.FormClosing += delegate { this.Show(); };
             help.ShowDialog();
         }
         //  END

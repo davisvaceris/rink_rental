@@ -44,12 +44,12 @@ namespace GALA_darbs_DV
             this.accessoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.workersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ADMINToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-
             // 
             // menuStrip1
             // 
@@ -73,7 +73,7 @@ namespace GALA_darbs_DV
             this.HOMEToolStripMenuItem.Name = "HOMEToolStripMenuItem";
             this.HOMEToolStripMenuItem.Size = new System.Drawing.Size(66, 24);
             this.HOMEToolStripMenuItem.Text = "HOME";
-            this.HOMEToolStripMenuItem.DoubleClick += new System.EventHandler(this.HOMEToolStripMenuItem_Click);
+            this.HOMEToolStripMenuItem.Click += new System.EventHandler(this.HOMEToolStripMenuItem_Click);
             // 
             // addRenterToolStripMenuItem
             // 
@@ -182,7 +182,7 @@ namespace GALA_darbs_DV
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(131, 26);
             this.aboutToolStripMenuItem.Text = "about";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -190,11 +190,11 @@ namespace GALA_darbs_DV
             // 
             this.helpToolStripMenuItem1.DoubleClickEnabled = true;
             this.helpToolStripMenuItem1.Name = "helpToolStripMenuItem1";
-            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(131, 26);
             this.helpToolStripMenuItem1.Text = "help";
             this.helpToolStripMenuItem1.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
-            // Form1
+            // admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -202,7 +202,7 @@ namespace GALA_darbs_DV
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "admin";
             this.Text = "admin | RINK RENTAL © Dāvis Vāceris";
             this.menuStrip1.ResumeLayout(false);
