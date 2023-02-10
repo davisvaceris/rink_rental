@@ -1,9 +1,33 @@
 -- SELECT RENTER NAME, EQUIPMENT NAME, FROM RENT;
 
-select rr.name||' '|| rr.surname Full_name, r.name 
+select rr.name||' '|| rr.surname Full_name, 
+	eq.eqna||' - '||eq.eqsi
+from rent r, renter rr, (
+	select e.equipment_id eq.name eqna, e.size eqsi
+from equipment e, equipment_type eq
+where e.equipment_id = eq.equipment_type_id
+) eq
+where r.rent_id =rr.renter_id;
 
 -- SELECT EQUIPMENT NAME FORM EQUIPMENT
 
 select eq.name equipment_name, e.size equipment_size
 from equipment e, equipment_type eq
 where e.equipment_id = eq.equipment_type_id;
+
+
+-- select accessories sum
+SELECT     r.rent_id id,
+			rr.name||' '||rr.surname full_name,
+			ac.price  sum,
+			r.date
+           FROM 
+            rent r
+          inner join (
+				select acre.rent_id rid, sum(ac.price) price
+				from accessories_rent acre, accessories ac
+				where acre.accessories_id = ac.accessories_id
+				group by rid
+			) ac ON r.rent_id = ac.rid
+			inner join renter rr on rr.renter_id= r.renter_id
+		  order by r.date desc;

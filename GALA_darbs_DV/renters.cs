@@ -137,6 +137,21 @@ namespace GALA_darbs_DV
             help.StartPosition = FormStartPosition.Manual;
             help.ShowDialog();
         }
+
+        private void phone_number_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void surname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
         //  END
         //  MENU click
         //

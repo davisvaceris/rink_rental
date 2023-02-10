@@ -14,3 +14,45 @@ where r.rent_id =rr.renter_id;
 select eq.name equipment_name, e.size equipment_size
 from equipment e, equipment_type eq
 where e.equipment_id = eq.equipment_type_id;
+
+
+-- select accessories sum
+SELECT     r.rent_id id,
+			rr.name||' '||rr.surname full_name,
+			ac.price  sum,
+			r.date
+           FROM 
+            rent r
+          inner join (
+				select acre.rent_id rid, sum(ac.price) price
+				from accessories_rent acre, accessories ac
+				where acre.accessories_id = ac.accessories_id
+				group by rid
+			) ac ON r.rent_id = ac.rid
+			inner join renter rr on rr.renter_id= r.renter_id
+		  order by r.date desc;
+		  
+--sum for renters
+select r.rent_id id, 
+		rr.name||' '||rr.surname renter,
+		r.date, 
+		CASE 
+			when ac.price is null then
+				eqt.price_per_hour*r.hours*age.price_multiplier 
+			else
+				eqt.price_per_hour*r.hours*age.price_multiplier+ac.price
+		end 
+		sum
+from rent r
+          left join (
+				select acre.rent_id rid, sum(ac.price) price
+				from accessories_rent acre, accessories ac
+				where acre.accessories_id = ac.accessories_id
+				group by rid
+			) ac ON r.rent_id = ac.rid
+			, equipment_type eqt, equipment eq, age_range age, renter rr
+	where r.equipment_id=eq.equipment_id
+		and eqt.equipment_type_id = eq.equipment_type_id 
+		and r.age_range_id = age.age_range_id
+		and r.renter_id = rr.renter_id
+		order by date desc;		  
