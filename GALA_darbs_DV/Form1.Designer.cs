@@ -52,19 +52,20 @@
             // 
             this.label1.AccessibleName = "lbl";
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(589, 50);
+            this.label1.Location = new System.Drawing.Point(542, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(79, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "equipment type";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(680, 43);
+            this.comboBox1.Location = new System.Drawing.Point(626, 43);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(92, 21);
+            this.comboBox1.Size = new System.Drawing.Size(146, 21);
             this.comboBox1.TabIndex = 2;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 

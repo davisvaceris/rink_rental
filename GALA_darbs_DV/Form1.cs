@@ -90,5 +90,10 @@ namespace GALA_darbs_DV
             EquiSearch.Show();
             this.Close();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

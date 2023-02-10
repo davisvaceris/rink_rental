@@ -1,0 +1,9 @@
+-- SELECT RENTER NAME, EQUIPMENT NAME, FROM RENT;
+
+select rr.name||' '|| rr.surname Full_name, r.name 
+
+-- SELECT EQUIPMENT NAME FORM EQUIPMENT
+
+select eq.name equipment_name, e.size equipment_size
+from equipment e, equipment_type eq
+where e.equipment_id = eq.equipment_type_id;
