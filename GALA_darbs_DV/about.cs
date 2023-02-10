@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace GALA_darbs_DV
 {
-    public partial class add_renter : Form
+    public partial class about : Form
     {
-        public add_renter()
+        public about()
         {
             InitializeComponent();
         }
-       
     }
 }
