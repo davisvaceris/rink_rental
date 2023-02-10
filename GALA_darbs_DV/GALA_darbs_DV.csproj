@@ -97,6 +97,18 @@
     <Compile Include="add renter.Designer.cs">
       <DependentUpon>add renter.cs</DependentUpon>
     </Compile>
+    <Compile Include="admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_workers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_workers.Designer.cs">
+      <DependentUpon>admin_workers.cs</DependentUpon>
+    </Compile>
     <Compile Include="equipment_search.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +120,12 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="help.Designer.cs">
+      <DependentUpon>help.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

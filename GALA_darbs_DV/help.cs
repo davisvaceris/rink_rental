@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GALA_darbs_DV
 {
-    public partial class renters : Form
+    public partial class help : Form
     {
-        public renters(bool active = true)
+        public help()
         {
             InitializeComponent();
         }
